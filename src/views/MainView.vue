@@ -12,11 +12,36 @@
               <h1>Будь в курсе всех событий - <b class="title__boldtext">и точка!</b></h1>
             </div>   
             <div class="main_block__image">
-              <img src="source/carusel.jpg" alt="">
+              <img class="main_block__image" src="../assets/body-pic.jpg" alt="picture">
             </div>
           </div>
           <button class="main-block__button">Начать</button> 
           <a href="#" class="main-block__icon-button"><img class="main-block__icon" src="source/arrow.svg" alt="arrow"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page__about-project">
+      <div class="about-project__container _container">
+        <div class="about-project__descript">
+          <p class="about-project__title">Что такое <b class="title__line">Точка сбора</b>?</p>
+        </div>
+        <div class="about-project__items">
+          <div class="about-project__item">
+            <img src="../assets/1.png" alt="pic">
+            <p class="item__title">Заводи знакомства</p>
+            <p class="item__subtitle">Знакомься с людьми со схожими интересами вживую или онлайн</p>
+          </div>
+          <div class="about-project__item">
+            <img src="../assets/2.png">
+            <p class="item__title">Посещай мероприятия</p>
+            <p class="item__subtitle">Присоединяйся к инетересным тебе мероприятиям в твоём городе</p>
+          </div>
+          <div class="about-project__item">
+            <img src="../assets/3.png">
+            <p class="item__title">Стань организатором</p>
+            <p class="item__subtitle">Подай заявку на становление организатором и собирай единомышленников вокруг себя</p>
+          </div>
         </div>
       </div>
     </div>
@@ -139,7 +164,42 @@ input::placeholder{
     max-width: 700px;
     
 }
-
+.page__about-project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.about-project__title{
+  font-size: 40px;
+  color: #313131;
+  margin-bottom: 40px;
+}
+.title__line{
+  color: #3ACBBA;
+}
+.about-project__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.about-project__item {
+  color:#313131;
+  font-family: 'Helvetica';
+}
+.item__image {
+  max-height: 250px;
+  max-width: 225px;
+}
+.item__title {
+  font-size: 30px;
+  font-weight: 500;
+}
+.item__subtitle {
+  line-height: calc(29 / 23 * 100%);
+  font-weight: 300;
+  font-size: 20px;
+}
 .page__near-vebinar {
     margin-top: 130px;
 }
@@ -157,6 +217,7 @@ input::placeholder{
     justify-content: space-between;
 }
 .near-vebinar__subtitle{
+    line-height: calc(20 / 27 * 100%);
     font-size: 20px;
     color: #A6A6A6;
 }

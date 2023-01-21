@@ -2,9 +2,11 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container _container">
-        <p class="header__logo">
+        <router-link to="/">
+          <p class="header__logo">
           точка . сбора
-        </p>
+          </p>
+        </router-link>
         <nav class="header__menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -19,7 +21,7 @@
           </ul>
         </nav>
         <button class="header__button">
-          Вход
+          <router-link class="menu__link" to="/reg">Вход</router-link>
         </button>
       </div>
     </header>
@@ -125,7 +127,7 @@ img{
     top: 0;
     z-index: 100;
     padding: 0px 15px;
-    font-family: 'Roboto';
+    font-family: 'Helvetica';
 }
 .header__container {
     align-items: center;
@@ -164,6 +166,9 @@ img{
     min-height: 45px;
     font-weight: 400;
     font-size: 20px;
+}
+.header__button:hover{
+  background-color: #9f9f9f;
 }
 /* --------------ФУТЕР------------------------------------------------ */
 .footer{
