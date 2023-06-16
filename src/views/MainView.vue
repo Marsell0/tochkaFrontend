@@ -43,6 +43,9 @@
             <p class="item__subtitle">Подай заявку на становление организатором и собирай единомышленников вокруг себя</p>
           </div>
         </div>
+        <div class="about-project__btn">
+
+        </div>
       </div>
     </div>
 
@@ -51,7 +54,12 @@
         <div class="near-vebinar__descript">
           <p class="near-vebinar__title">Ближайшие мероприятия  <a class="near-vebinar__subtitle" href="#">Узнать больше</a></p>
         </div>
-        <div class="near-vebinar__vebinars">
+        <swiper :modules="modules" :pagination="{ clickable: true }">
+          <swiper-slide>Slide 1</swiper-slide>
+          <swiper-slide>Slide 2</swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+        </swiper>
+        <!-- <div class="near-vebinar__vebinars">
           <div class="near-vebinar__vebinar">
             <div class="vebinar__image"></div>
             <p class="vebinar__title">Название мероприятия</p>
@@ -62,16 +70,32 @@
             <p class="vebinar__title">Название мероприятия</p>
             <p class="vebinar__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quam iste error minus laboriosam impedit hic voluptas nam? Voluptatibus, voluptatem.</p>
           </div>
-          <div class="near-vebinar__vebinar">
-            <div class="vebinar__image"></div>
-            <p class="vebinar__title">Название мероприятия</p>
-            <p class="vebinar__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quam iste error minus laboriosam impedit hic voluptas nam? Voluptatibus, voluptatem.</p>
-          </div>
-        </div>
+          <Event>
+          </Event> 
+        </div>-->
       </div>
     </div>
   </main>
 </template>
+
+<script>
+import Event from '@/components/Event.vue'
+import SwiperClass, { Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
+export default{
+  components:{
+    Event, Swiper, SwiperSlide
+  },
+  setup() {
+      return {
+        modules: [Pagination]
+      }
+    }
+}
+</script>
 
 <style scoped>
 .page {
