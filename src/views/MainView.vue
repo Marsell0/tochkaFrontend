@@ -74,8 +74,14 @@
 </template>
 
 <style scoped>
-  .page {
+.page {
     flex: 1 1 auto;
+}
+._container{
+  max-width: 1533px;
+  max-height: 4320px;
+  margin: 0px auto;
+  display: flex;
 }
 .page__main-block {
 }
@@ -174,8 +180,16 @@ input::placeholder{
   color: #313131;
   margin-bottom: 40px;
 }
+.about-project__container{
+  flex-direction: column;
+}
 .title__line{
   color: #3ACBBA;
+}
+.about-project__descript{
+  height: max-content;
+  display: flex;
+  justify-content: center;
 }
 .about-project__items {
   display: flex;
@@ -186,6 +200,7 @@ input::placeholder{
 .about-project__item {
   color:#313131;
   font-family: 'Helvetica';
+  max-width: 416px;
 }
 .item__image {
   max-height: 250px;
@@ -194,6 +209,7 @@ input::placeholder{
 .item__title {
   font-size: 30px;
   font-weight: 500;
+  margin: 25px 0 25px 0;
 }
 .item__subtitle {
   line-height: calc(29 / 23 * 100%);

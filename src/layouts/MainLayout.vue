@@ -20,9 +20,9 @@
             </li>
           </ul>
         </nav>
-        <button class="header__button">
-          <router-link class="menu__link" to="/reg">Вход</router-link>
-        </button>
+        <white-btn>
+          Вход
+        </white-btn>
       </div>
     </header>
 
@@ -66,6 +66,18 @@
     </footer>
   </div>
 </template>
+
+<script>
+import WhiteBtn from '@/components/WhiteBtn.vue'
+import Modal from '@/components/Modal.vue'
+
+export default{
+  components:{
+    WhiteBtn, Modal
+  }
+}
+</script>
+
 
 <style>
   *,
