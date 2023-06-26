@@ -79,7 +79,6 @@
 </template>
 
 <script>
-import Event from '@/components/Event.vue'
 import SwiperClass, { Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 
@@ -87,7 +86,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 export default{
   components:{
-    Event, Swiper, SwiperSlide
+    Swiper, SwiperSlide
   },
   setup() {
       return {

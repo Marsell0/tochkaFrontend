@@ -68,12 +68,9 @@
 </template>
 
 <script>
-import WhiteBtn from '@/components/WhiteBtn.vue'
-import Modal from '@/components/Modal.vue'
-
 export default{
   components:{
-    WhiteBtn, Modal
+    
   }
 }
 </script>
