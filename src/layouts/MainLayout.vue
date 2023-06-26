@@ -20,9 +20,9 @@
             </li>
           </ul>
         </nav>
-        <white-btn>
+        <white-button>
           Вход
-        </white-btn>
+        </white-button>
       </div>
     </header>
 
@@ -68,9 +68,10 @@
 </template>
 
 <script>
+import WhiteButton from '@/components/WhiteButton.vue'
 export default{
   components:{
-    
+    WhiteButton
   }
 }
 </script>
@@ -137,6 +138,7 @@ img{
     z-index: 100;
     padding: 0px 15px;
     font-family: 'Helvetica';
+    box-shadow: 0 0 7px 0px gray;
 }
 .header__container {
     align-items: center;

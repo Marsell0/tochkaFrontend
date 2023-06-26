@@ -86,7 +86,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 export default{
   components:{
-    Swiper, SwiperSlide
+    Swiper, SwiperSlide, 
   },
   setup() {
       return {
@@ -126,13 +126,13 @@ export default{
     justify-content: center;
     min-height: 50px;
     margin: 102px 0 87px 0;
+    
 }
 .search-string__field {
     flex: 1;
-    border: 1px solid;
-    border-radius: 45px;
-    max-width: 1144px;
-    max-height: 50px;
+    border-radius: 15px;
+    border: 1px solid #A6A6A6;
+    background: #FFF;
 }
 input::placeholder{
     padding-left: 5%;
