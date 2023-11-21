@@ -1,9 +1,9 @@
 <template>
   <div class="block">
+    <div class="block__img">
+      <slot name="img"></slot>
+    </div>
     <div class="block__wrapper">
-      <div class="block__img">
-        <slot name="img"></slot>
-      </div>
       <div class="block__content">
         <div class="content__title">
           <slot name="title"></slot>
@@ -41,7 +41,7 @@ function changeIcon(event) {
 }
 </script>
 
-<style>
+<style scoped>
 .block {
   max-width: 430px;
   max-height: 310px;

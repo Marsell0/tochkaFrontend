@@ -79,6 +79,17 @@
             <div class="slider__block">
               <InteresBlock v-for="item in interes">
                 <template #img
+                  ><img src="../assets/interes/art.png"
+                /></template>
+                <template #title>{{ item.title }}</template>
+                <template #subtitle>{{ item.subtitle }}</template>
+              </InteresBlock>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slider__block">
+              <InteresBlock v-for="item in interes">
+                <template #img
                   ><img src="../assets/interes/photo.png"
                 /></template>
                 <template #title>{{ item.title }}</template>
@@ -89,16 +100,9 @@
           <swiper-slide>
             <div class="slider__block">
               <InteresBlock v-for="item in interes">
-                <template #img>{{ item.img }}</template>
-                <template #title>{{ item.title }}</template>
-                <template #subtitle>{{ item.subtitle }}</template>
-              </InteresBlock>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="slider__block">
-              <InteresBlock v-for="item in interes">
-                <template #img>{{ item.img }}</template>
+                <template #img
+                  ><img src="../assets/interes/manga.png"
+                /></template>
                 <template #title>{{ item.title }}</template>
                 <template #subtitle>{{ item.subtitle }}</template>
               </InteresBlock>
@@ -123,7 +127,7 @@
         <swiper-slide>
           <div class="slider__block">
             <EventBlock v-for="item in events">
-              <template #img>{{ item.img }}</template>
+              <template #img><img src="../assets/events/run.png" /></template>
               <template #date>{{ item.date }}</template>
               <template #title>{{ item.title }}</template>
               <template #subtitle>{{ item.subtitle }}</template>
@@ -133,7 +137,7 @@
         <swiper-slide>
           <div class="slider__block">
             <EventBlock v-for="item in events">
-              <template #img>{{ item.img }}</template>
+              <template #img><img src="../assets/events/dance.png" /></template>
               <template #date>{{ item.date }}</template>
               <template #title>{{ item.title }}</template>
               <template #subtitle>{{ item.subtitle }}</template>
@@ -143,7 +147,7 @@
         <swiper-slide>
           <div class="slider__block">
             <EventBlock v-for="item in events">
-              <template #img>{{ item.img }}</template>
+              <template #img><img src="../assets/events/html.png" /></template>
               <template #date>{{ item.date }}</template>
               <template #title>{{ item.title }}</template>
               <template #subtitle>{{ item.subtitle }}</template>
@@ -380,7 +384,7 @@ input::placeholder {
   color: #313131;
   font-feature-settings: "clig" off, "liga" off;
   text-shadow: 0px 1px 5px rgba(58, 203, 186, 0.15);
-  font-size: 28px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px; /* 78.571% */
@@ -447,7 +451,7 @@ input::placeholder {
   padding-bottom: 60px;
   color: #313131;
   font-feature-settings: "clig" off, "liga" off;
-  font-size: 28px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px; /* 78.571% */
@@ -470,8 +474,8 @@ input::placeholder {
 .slider__block {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 50px;
+  justify-content: space-around;
+  padding-bottom: 80px;
 }
 .slider__item {
   display: flex;
@@ -523,6 +527,7 @@ input::placeholder {
 /*-----------------------DOWNLOAD----------------------*/
 .page__download {
   padding-top: 250px;
+  padding-bottom: 100px;
   max-width: 800px;
   margin: 0px auto;
 }

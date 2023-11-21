@@ -1,9 +1,9 @@
 <template>
   <div class="block">
+    <div class="block__img">
+      <slot name="img"></slot>
+    </div>
     <div class="block__wrapper">
-      <div class="block__img">
-        <slot name="img"></slot>
-      </div>
       <div class="block__content">
         <div class="content__date">
           <slot name="date">13.00</slot>
@@ -36,12 +36,13 @@ function changeIcon(event) {
 }
 </script>
 
-<style>
+<style scoped>
 .block {
-  max-width: 430px;
-  max-height: 310px;
+  width: 430px;
+  height: 310px;
   border-radius: 10px;
   background: #fff;
+  padding-bottom: 450px;
 
   /* ShadowCard */
   box-shadow: 0px 10px 40px 0px rgba(217, 217, 217, 0.25);
@@ -50,7 +51,8 @@ function changeIcon(event) {
   max-width: 370px;
   margin: 0px auto;
 }
-.block__image {
+.block__img {
+  max-width: 430px;
 }
 .block__content {
   padding: 30px;

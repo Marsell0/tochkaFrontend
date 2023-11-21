@@ -21,7 +21,9 @@
             </li>
           </ul>
         </nav>
-        <div class="header__btn">ВОЙТИ</div>
+        <router-link to="/reg"
+          ><div class="header__btn">ВОЙТИ</div></router-link
+        >
       </div>
     </header>
 
@@ -87,7 +89,7 @@
   </div>
 </template>
 
-<script></script>
+<script setup></script>
 
 <style>
 .wrapper {
@@ -167,7 +169,6 @@
 }
 /* --------------ФУТЕР------------------------------------------------ */
 .footer {
-  margin-top: 245px;
   flex: 0 0 auto;
   background-color: #38978b;
 }
